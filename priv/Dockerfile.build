@@ -11,6 +11,10 @@ RUN \
       elixir@edge && \
     rm -rf /var/cache/apk/*
 
+RUN echo "---------!!!!!!!!!!shirale----------------------------------------------------------------------------------"
+RUN elixir -v
+RUN echo "---------!!!!!!!!!!shirale----------------------------------------------------------------------------------"
+
 # Install Hex+Rebar
 RUN mix local.hex --force && \
     mix local.rebar --force
